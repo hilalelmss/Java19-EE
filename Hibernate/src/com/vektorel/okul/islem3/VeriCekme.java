@@ -1,4 +1,4 @@
-package com.vektorel.okul.islem2;
+package com.vektorel.okul.islem3;
 
 import com.vektorel.okul.Dao.Dao;
 import com.vektorel.okul.entity.Student;
@@ -11,7 +11,7 @@ public class VeriCekme {
 
 		Student student = dao.getStudent(1);
 
-		System.out.println(student.getOkul().getName());
+		System.out.println(student.getMudurs().get(0).getName());
 
 	}
 

@@ -1,5 +1,6 @@
 package com.vektorel.okul.Dao;
 
+import com.vektorel.okul.entity.Okul;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -14,7 +15,7 @@ public class Dao {
 	SessionFactory sessionFactory;
 
 	public Dao() {
-		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 	}
 
 	public void addStudent(Student student) {
@@ -49,4 +50,33 @@ public class Dao {
 		return student1;
 	}
 
+    public void addMudur(Mudur mudur) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		try{
+			tx = session.beginTransaction();
+			session.save(mudur);
+			tx.commit();
+		}catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+			e.printStackTrace();
+		}finally {
+			session.close();
+		}
+    }
+
+	public void addOkul(Okul okul) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		try{
+			tx = session.beginTransaction();
+			session.save(okul);
+			tx.commit();
+		}catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+			e.printStackTrace();
+		}finally {
+			session.close();
+		}
+	}
 }
