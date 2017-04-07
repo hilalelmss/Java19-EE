@@ -1,4 +1,4 @@
-package com.vektorel.okul.islem;
+package com.vektorel.okul.islem2;
 
 import com.vektorel.okul.Dao.Dao;
 import com.vektorel.okul.entity.Student;
