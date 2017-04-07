@@ -13,17 +13,17 @@ public class VeriEkle {
 		student.setId(0);
 		student.setName("Mustafa");
 		
-		Mudur mudur = new Mudur("1","Mahmut");
-		
-		dao.addMudur(mudur);
-		
-		dao.addStudent(student);
-		
-		Mudur mudur3 = dao.getMudur(1);
-		
-		System.out.println(mudur3.getName());
-		
-		dao.close();
+//		Mudur mudur = new Mudur("1","Mahmut");
+//
+//		dao.addMudur(mudur);
+//
+//		dao.addStudent(student);
+//
+//		Mudur mudur3 = dao.getMudur(1);
+//
+//		System.out.println(mudur3.getName());
+//
+//		dao.close();
 	}
 
 }

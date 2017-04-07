@@ -1,14 +1,12 @@
 package com.vektorel.okul.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "mustafa_ergan")
 public class Student {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
 	private String name;

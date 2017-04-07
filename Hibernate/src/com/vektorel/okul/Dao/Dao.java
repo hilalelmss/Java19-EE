@@ -11,7 +11,6 @@ import com.vektorel.okul.entity.Student;
 
 public class Dao {
 
-
 	SessionFactory sessionFactory;
 
 	public Dao() {
@@ -49,21 +48,5 @@ public class Dao {
 		}
 		return student1;
 	}
-
-//	public void addMudur(Mudur mudur) {
-//		session.save(mudur);
-//		session.beginTransaction().commit();
-//	}
-//
-//	public Mudur getMudur(int id) {
-//
-//		session.beginTransaction().begin();
-//		Mudur mudur = session.get(Mudur.class, String.valueOf(id));
-//		return mudur;
-//	}
-//
-//	public void close() {
-//		session.close();
-//	}
 
 }

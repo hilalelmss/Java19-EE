@@ -10,12 +10,12 @@ public class VeriCekme {
 		Dao dao = new Dao();
 		
 		
-		Mudur mudur = dao.getMudur(1);
-		
-		
-		System.out.println(mudur.getName());
-		
-		dao.close();
+//		Mudur mudur = dao.getMudur(1);
+//
+//
+//		System.out.println(mudur.getName());
+//
+//		dao.close();
 		
 	}
 
