@@ -1,6 +1,6 @@
 # Hibernate Dersleri
 
-# Taglar
+## Taglar
 
 **@Table** ile oluşturacaağımız tablonun adını değiştirmektedir.
 
@@ -16,7 +16,7 @@
 Veritabanı tabloların arasında bire bir ilişiki olması gerekmektedir.
 
 
-# **Criteria** 
+## **Criteria** 
 
 
 // Maas 2000'den büyük olanlar
@@ -63,7 +63,7 @@ cr.setMaxResults(10);
 List results = cr.list();
 
 
-# HQL
+## HQL
 
 //Bütün tabloyu çekmek
 
