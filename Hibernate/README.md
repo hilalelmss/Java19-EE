@@ -62,14 +62,19 @@ cr.setFirstResult(1);
 cr.setMaxResults(10);
 List results = cr.list();
 
-
+//Expression :  (c1 AND c2) OR (c3) 
 
  Criteria criteria = session.createCriteria(Employee.class);
 
+
   Criterion c1 = Restrictions.like("name", "%e%");
+  
   Criterion c2 = Restrictions.ge("salary", 10000.00);
+  
   Criterion c3 = Restrictions.like("name", "%YYY%");
+  
   Criterion c4 = Restrictions.or(Restrictions.and(c1, c2), c3);
+  
 
 ## HQL
 
